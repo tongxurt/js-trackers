@@ -1,0 +1,39 @@
+{
+  "name": "@capybara-trackers/core",
+  "version": "1.0.11",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tongxurt/js-trackers.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "publish": "tsup src/index.ts --format cjs,esm --dts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.1",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@turbo/gen": "^1.12.4",
+    "@types/eslint": "^8.56.5",
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "@types/uuid": "~3.4.6",
+    "ava": "~4.1.0",
+    "eslint": "^8.57.0",
+    "ts-node": "~10.9.1",
+    "tsup": "^8.3.0",
+    "typescript": "^5.3.3"
+  }
+}
